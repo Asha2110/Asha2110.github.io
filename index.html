@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TindiKindi | Premium Homemade Snacks</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="premium-nav">
+    <div class="nav-left">
+      <img src="C:\Users\aksha\Desktop\TindiKindi\images\Logo.png" class="logo">
+      <div class="brand-name">
+      <h1>TindiKindi</h1>
+      <p>Ahaa! Chanagide</p>
+    </div>
+    </div>
+    <div class="nav-right">
+      <span class="cart-icon" onclick="openCart()">Cart</span>
+      
+      <span id="header-cart-count">0</span>
+    </div>
+    </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>TindiKindi</h1>
+      <p>Premium homemade snacks, crafted with tradition and love.</p>
+      <button class="btn" onclick="document.getElementById('prod').scrollIntoView()">SHOP NOW</button>
+    </div>
+  </section>
+
+  <!-- WHY TINDIKINDI -->
+  <section class="why">
+    <h2>Why TindiKindi?</h2>
+    <div class="why-cards">
+      <div class="why-card">
+        <span>✅</span>
+        <h3>100% Homemade</h3>
+        <p>Made in small batches with care.</p>
+      </div>
+      <div class="why-card">
+        <span>⭐</span>
+        <h3>Premium Quality</h3>
+        <p>Selected best ingredients only.</p>
+      </div>
+      <div class="why-card">
+        <span>🌿</span>
+        <h3>No Preservatives</h3>
+        <p>Pure, natural & healthy snacks.</p>
+      </div>
+      <div class="why-card">
+        <span>💰</span>
+        <h3>Affordable</h3>
+        <p>Healthy snacks in Affordable price </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="products" id="prod">
+    <h2>Best Sellers</h2>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="C:\Users\aksha\Desktop\TindiKindi\images\RagiMurukku.jpg">
+        <h3>Ragi Murukku</h3>
+        <div class="price">
+          <span>250g - ₹90 </span>
+          <button class="btn" onclick="decreaseQty('RagiMurukku','250g',90)">-</button>
+          <span id="qty-RagiMurukku-250g">0</span>
+          <button class="btn"onclick="increaseQty('RagiMurukku','250g',90)">+</button>
+        </div>
+        <div class="price">
+          <span>500g - ₹170</span>
+          <button class="btn" onclick="decreaseQty('RagiMurukku','500g',170)">-</button>
+          <span id="qty-RagiMurukku-500g">0</span>
+          <button class="btn" onclick="increaseQty('RagiMurukku','500g',170)">+</button>
+        </div>
+        <div class="price">
+          <span> 1 kg - ₹330</span>
+          <button class="btn" onclick="decreaseQty('RagiMurukku','1kg',330)">-</button>
+          <span id="qty-RagiMurukku-1kg">0</span>
+          <button class="btn" onclick="increaseQty('RagiMurukku','1kg',330)">+</button>
+        </div>
+      </div>
+      
+
+      <div class="product-card">
+        <img src="C:\Users\aksha\Desktop\TindiKindi\images\Avalakki.jpg">
+        <h3>Avalakki Mixture</h3>
+
+        <div class="price">
+          <span>250g - ₹100 </span>
+          <button class="btn" onclick="decreaseQty('AvalakkiMixture','250g',100)">-</button>
+          <span id="qty-AvalakkiMixture-250g">0</span>
+          <button class="btn"onclick="increaseQty('AvalakkiMixture','250g',100)">+</button>
+        </div>
+  
+        <div class="price">
+          <span>500g - ₹190</span>
+          <button class="btn" onclick="decreaseQty('AvalakkiMixture','500g',190)">-</button>
+          <span id="qty-AvalakkiMixture-500g">0</span>
+          <button class="btn" onclick="increaseQty('AvalakkiMixture','500g',190)">+</button>
+        </div>
+        
+        <div class="price">
+          <span> 1 kg - ₹350</span>
+          <button class="btn" onclick="decreaseQty('AvalakkiMixture','1kg',350)">-</button>
+          <span id="qty-AvalakkiMixture-1kg">0</span>
+          <button class="btn" onclick="increaseQty('AvalakkiMixture','1kg',350)">+</button>
+        </div>
+      </div>
+
+
+
+      <div class="product-card">
+        <img src="C:\Users\aksha\Desktop\TindiKindi\images\Nippattu.jpg">
+        <h3>Nippattu</h3>
+        <div class="price">
+          <span>250g - ₹120 </span>
+          <button class="btn" onclick="decreaseQty('Nippattu','250g',120)">-</button>
+          <span id="qty-Nippattu-250g">0</span>
+          <button class="btn"onclick="increaseQty('Nippattu','250g',120)">+</button>
+        </div>
+      
+        <div class="price">
+          <span>500g - ₹210</span>
+          <button class="btn" onclick="decreaseQty('Nippattu','500g',210)">-</button>
+          <span  id="qty-Nippattu-500g">0</span>
+          <button class="btn" onclick="increaseQty('Nippattu','500g',210)">+</button>
+        </div>
+
+        <div class="price">
+          <span> 1 kg - ₹380</span>
+          <button class="btn" onclick="decreaseQty('Nippattu','1kg',380)">-</button>
+          <span  id="qty-Nippattu-1kg">0</span>
+          <button class="btn" onclick="increaseQty('Nippattu','1kg',380)">+</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="C:\Users\aksha\Desktop\TindiKindi\images\Chakli.jpg">
+        <h3>Chakli</h3>
+        <div class="price">
+          <span>250g - ₹120 </span>
+          <button class="btn" onclick="decreaseQty('Chakli','250g',120)">-</button>
+          <span id="qty-Chakli-250g">0</span>
+          <button class="btn"onclick="increaseQty('Chakli','250g',120)">+</button>
+        </div>
+        
+        <div class="price">
+          <span>500g - ₹210</span>
+          <button class="btn" onclick="decreaseQty('Chakli','500g',210)">-</button>
+          <span id="qty-Chakli-500g">0</span>
+          <button class="btn" onclick="increaseQty('Chakli','500g',210)">+</button>
+        </div>
+        <div class="price">
+          <span> 1 kg - ₹380</span>
+          <button class="btn" onclick="decreaseQty('Chakli','1kg',380)">-</button>
+          <span id="qty-Chakli-1kg">0</span>
+          <button class="btn" onclick="increaseQty('Chakli','1kg',380)">+</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>Our Story</h2>
+    <p>
+      TindiKindi brings you authentic homemade snacks made using family recipes
+      passed down through generations. Every bite is a taste of tradition, purity and love.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>TindiKindi</h3>
+    <p>📞 +91 XXXXXXXXXX</p>
+    <p>📩 WhatsApp Orders Available</p>
+    <p>Follow on <a href="https://www.instagram.com/tindi_kindi/">Instagram</a></p>
+    <p>Powered by <b>Innovaash</b></p>
+  </footer>
+  <!---Sticky note-->
+  <div id="cart-bar" class="cart-bar" onclick="openCart()">
+
+  </div>
+ 
+
+        <!---Cart Panel-->
+        <div id="cartPanel">
+        <button type="button" style="padding: 8px 15px" onclick="closeCart()">Close x</button>
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <p id="emptyMsg">Cart is empty</p>
+        <h3>Items: <span id="cart-count">0</span></h3>
+        <h3>Total: ₹<span id="header-cart-total">0</span></h3>
+        <input id ="customerName" type="text" placeholder="Your Name">
+        <input id ="customerPhone" type="text" placeholder="Your Phone Number">
+        <textarea id="customerAddress" placeholder="Delivery Address"></textarea>
+        <button id="placeOrder" onclick="placeOrder()">Place Order</button>
+
+
+ 
+        
+   <script src="script.js"></script>
+          
+        
+</body>
+</html>
